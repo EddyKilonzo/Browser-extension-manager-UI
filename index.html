@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <script src="https://kit.fontawesome.com/71bcccf63f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Browser extensions manager UI</title>
+
+</head>
+<body>
+  <div class="container">
+    <header>
+
+      <div class="left">
+        <img src="./assets/images/logo.svg" alt=""> 
+        
+      </div>
+  
+      <div class="right">
+        <img src="./assets/images/icon-sun.svg" alt="">
+  
+      </div>
+    </header>
+
+
+    <main>
+
+    <div class="head">
+
+      <div class="top-left">
+        <h1>Extension List</h1>
+      </div>
+      <div class="top-right">
+        <button id="all" class="active"> ALL</button>
+        <button id="active">Active</button>
+        <button id="inactive">Inactive </button>
+
+      </div>
+
+    </div>
+
+    <div class="content">
+
+      <div class="card">
+
+        <div class="upper">
+          <img src="./assets/images/logo-devlens.svg" alt="">
+          <div>
+            <h2>DevLens</h2>
+            <P>Quickly inspect page layouts and visualize element boundaries.</P>
+          </div>
+        </div>
+
+        <div class="lower">
+          <button>Remove</button>
+          <i class="fa-solid fa-toggle-on"></i>
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <div class="upper">
+          <img src="./assets/images/logo-style-spy.svg" alt="">
+          <div>
+            <h2>StyleSpy</h2>
+            <P>Instantly analyze and copy CSS from any webpage element.</P>
+          </div>
+        </div>
+
+        <div class="lower">
+          <button>Remove</button>
+          <i class="fa-solid fa-toggle-on"></i>
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <div class="upper">
+          <img src="./assets/images/logo-speed-boost.svg" alt="">
+          <div>
+            <h2>SpeedBoost</h2>
+            <P>Optimizes images, CSS, and JavaScript for faster loading.</P>
+          </div>
+        </div>
+
+        <div class="lower">
+          <button>Remove</button>
+          <i class="fa-solid fa-toggle-off"></i>
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <div class="upper">
+          <img src="./assets/images/logo-devlens.svg" alt="">
+          <div>
+            <h2>JSONWizard</h2>
+            <P>Formats, validates, and prettifies JSON responses in-browser.</P>
+          </div>
+        </div>
+
+        <div class="lower">
+          <button>Remove</button>
+          <i class="fa-solid fa-toggle-on"></i>
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <div class="upper">
+          <img src="./assets/images/logo-tab-master-pro.svg" alt="">
+          <div>
+            <h2>TabMaster Pro</h2>
+            <P>Organizes browser tabs into groups and sessions.</P>
+          </div>
+        </div>
+
+        <div class="lower">
+          <button>Remove</button>
+          <i class="fa-solid fa-toggle-on"></i>
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <div class="upper">
+          <img src="./assets/images/logo-devlens.svg" alt="">
+          <div>
+            <h2>ViewportBuddy</h2>
+            <P>Simulates various screen resolutions directly within the browser</P>
+          </div>
+        </div>
+
+        <div class="lower">
+          <button>Remove</button>
+          <i class="fa-solid fa-toggle-off"></i>
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <div class="upper">
+          <img src="./assets/images/logo-markup-notes.svg" alt="">
+          <div>
+            <h2>MarkUP Notes</h2>
+            <P>Enables annotations and notes direclty onto web pages for collaborate debbugging</P>
+          </div>
+        </div>
+
+        <div class="lower">
+          <button>Remove</button>
+          <i class="fa-solid fa-toggle-on"></i>
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <div class="upper">
+          <img src="./assets/images/logo-grid-guides.svg" alt="">
+          <div>
+            <h2>GridGuides</h2>
+            <P>Overlay customizable grids and alignment guides on any webpage</P>
+          </div>
+        </div>
+
+        <div class="lower">
+          <button>Remove</button>
+          <i class="fa-solid fa-toggle-off"></i>
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <div class="upper">
+          <img src="./assets/images/logo-palette-picker.svg" alt="">
+          <div>
+            <h2>PalletePicker</h2>
+            <P>Instantly extracts color palettes from any webpage</P>
+          </div>
+        </div>
+
+        <div class="lower">
+          <button>Remove</button>
+          <i class="fa-solid fa-toggle-on"></i>
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <div class="upper">
+          <img src="./assets/images/logo-link-checker.svg" alt="">
+          <div>
+            <h2>LinkChecker</h2>
+            <P>Scans and highlights broken links on any page.</P>
+          </div>
+        </div>
+
+        <div class="lower">
+          <button>Remove</button>
+          <i class="fa-solid fa-toggle-on"></i>
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <div class="upper">
+          <img src="./assets/images/logo-dom-snapshot.svg" alt="">
+          <div>
+            <h2>DomSnapshot</h2>
+            <P>Capture and export DOM structures quickly</P>
+          </div>
+        </div>
+
+        <div class="lower">
+          <button>Remove</button>
+          <i class="fa-solid fa-toggle-off"></i>
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <div class="upper">
+          <img src="./assets/images/logo-console-plus.svg" alt="">
+          <div>
+            <h2>ConsolePlus</h2>
+            <P>Enhanced developer console with  advanced filtering and logging</P>
+          </div>
+        </div>
+
+        <div class="lower">
+          <button>Remove</button>
+          <i class="fa-solid fa-toggle-on"></i>
+        </div>
+
+      </div>
+
+    </div>
+
+
+      
+
+    </main>
+
+  </div>
+
+  
+
+  
+</body>
+<script src="index.js"></script>
+</html>

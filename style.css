@@ -1,0 +1,156 @@
+@import url(./assets/fonts/NotoSans-Italic-VariableFont_wdth\,wght.ttf);
+
+:root {
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --active-color: `hsl(3, 86%, 64%);
+}
+
+.dark-mode {
+    --primary-color: hsl(225, 23%, 24%);
+    --secondary-color: hsl(0, 0%, 93%);
+    --active-color: hsl(3, 86%, 64%);
+}
+
+.light-mode {
+    --primary-color: hsl(0, 0%, 93%);
+    --secondary-color: hsl(225, 23%, 24%);
+    --active-color: hsl(3, 86%, 64%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: NotoSans-Italic-VariableFont_wdth\,wght;
+    font-weight: 400;
+    font-size: 16px;
+    background-color:  #091540 ;
+    
+    
+}
+
+.container {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+    /* background-color: ; */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    color: #fff;
+    background-color: hsl(225, 23%, 24%);
+    border-radius: 10px;
+}
+header .left {
+    display: flex;
+    align-items: center;
+}
+header .left img {
+    width: 100%;
+
+}
+
+header .right img {
+    background-color: hsl(226, 11%, 37%);
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+main .head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.head .top-left h1 {
+    color: #fff;
+}
+.head .top-right {
+    display: inline-block;
+    
+    
+}
+.head .top-right button {
+    background-color: hsl(226, 11%, 37%);
+    color: #fff;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+.head .top-right button:hover {
+    background-color: hsl(3, 77%, 44%);
+    transition: 0.3s all ease-in-out;
+}
+ .active {
+    background-color: hsl(3, 86%, 64%);
+}
+.content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 345px;
+    height: 170px;
+    margin-top: 20px;
+    color: hsl(0, 0%, 78%);
+    background-color: hsla(226, 25%, 17%,0.7);
+    border: 1px solid hsla(0, 0%, 100%, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+.card:hover {
+    background-color: hsl(226, 11%, 37%);
+    transition: 0.3s all ease-in-out;
+}
+.card .upper {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.card .upper img {
+    width: 80px;
+}
+.card .upper p {
+    font-size: 14px;
+    color: hsl(217, 61%, 90%);
+}
+.card .lower {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.card .lower button {
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid hsl(0, 0%, 76%); 
+    cursor: pointer;
+}
+.card .lower button:hover {
+    background-color: hsl(3, 77%, 44%);
+    transition: 0.3s all ease-in-out;
+}
+.card .lower i {
+    font-size: 29px;
+    margin-right: 15px;
+    color: hsl(3, 86%, 64%);
+}
+
