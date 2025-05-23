@@ -7,7 +7,7 @@ const card = document.querySelectorAll(".card");
 const sun = document.getElementById("sun");
 const moon = document.getElementById("moon");
 
-const content = [
+const extensions = [
     {
         "logo": "./assets/images/logo-devlens.svg",
         "name": "DevLens",
@@ -109,14 +109,15 @@ function showExtensions (extensions) {
                 </div>
             </div>
             <div class="lower">
-                <button id="remove">Remove</button> ;
+                <button id="remove">Remove</button> 
                 ${toggleIcon}
             </div>              
         `;
         cardContainer.appendChild(card);
     });
 }
-showExtensions(content);
+showExtensions(extensions);
+
 function clearTabStyles() {
     all.style.backgroundColor = "hsl(226, 11%, 37%)";
     active.style.backgroundColor = "hsl(226, 11%, 37%)";
@@ -125,7 +126,7 @@ function clearTabStyles() {
 
 active.addEventListener('click', () => {
     clearTabStyles();
-    const activeExtensions = content.filter((extension) => extension.isActive === true);
+    const activeExtensions = extensions.filter((extension) => extension.isActive === true);
     showExtensions(activeExtensions);
     active.style.backgroundColor = "hsl(3, 77%, 44%)";
 })
@@ -133,20 +134,19 @@ active.addEventListener('click', () => {
 
 inActive.addEventListener('click', () => {
     clearTabStyles();
-    const inActiveExtensions = content.filter((extension) => extension.isActive === false);
+    const inActiveExtensions = extensions.filter((extension) => extension.isActive === false);
     showExtensions(inActiveExtensions);
     inActive.style.backgroundColor = "hsl(3, 77%, 44%)";
 })
 
-
-
 all.addEventListener('click', () => {
     clearTabStyles();
-    showExtensions(content);
+    showExtensions(extensions);
     all.style.backgroundColor = "hsl(3, 77%, 44%)";
 })
+
 sun.addEventListener('click', () => {
-    documentbody.style.backgroundColor = "#091540";
+    document.body.style.backgroundColor = "#091540";
     sun.style.display = "none";
     moon.style.display = "block";
 })
